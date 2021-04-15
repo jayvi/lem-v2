@@ -1008,15 +1008,6 @@ p{
     min-height: 130px;
 }
 
-.desc-number:after {
-    position: absolute;
-    background: #3f0c4c;
-    width: 26px;
-    height: 8px;
-    display: block;
-    content: '';
-    bottom: -40px;
-}
 
 
 .max-circle-top-sx{
@@ -1138,15 +1129,7 @@ p{
 	margin-bottom: 5px;
 	color:#ffffff;}
 
-.ico:before {
-    position: absolute;
-    display: block;
-    width: 26px;
-    height: 8px;
-	top:50%;
-	transform: translateY(-50%);
-    background: #3f0b4c;
-	content: '';}
+
 
 .cut-circle{
 	position: relative;
