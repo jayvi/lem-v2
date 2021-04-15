@@ -1,0 +1,7 @@
+.mask-images-drag .mask-img-item {
+    clip-path: url(#cover-mask-item);
+}
+
+.what_we_do-images .what_we_do-img-item{
+    clip-path: url(#cover-mask-item-wwd);
+}
