@@ -52,185 +52,169 @@
     <link rel="apple-touch-icon" href="./cropped-favicon-180x180.png" />
     <meta name="msapplication-TileImage" content="./cropped-favicon-270x270.png" />
     <style type="text/css" id="">
-    .carousel-item > img{
-        width: 50% !important;
-        display: block;
-        margin: 0 auto;
+        a:hover {
+        color: #000000;
+        text-decoration: none;
     }
-    @media (max-width:767px){
-        .carousel-item > img{
-        width: 90% !important;
-        display: block;
-        margin: 0 auto;
+    .dropdown-item {
+        font-family: 'matizregular';
     }
-
-}
-    .d-md-block > p{
-        font-size: 23px;
-    }
-        .text-lightgrey {
-            color: rgb(0 0 0);
-        }
-
-        .fab,
-        .far {
-            font-weight: 400;
-            font-size: 18px;
-        }
-
-        .buyN {
-            color: #fabd2b !important;
-            background: #202020;
-            border-radius: 5px;
-        }
-
-        .miniM {
-            width: 70% !important;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .htB {
-            width: 50% !important;
-            margin: 0 auto;
-            display: block;
-        }
-
-        @font-face {
-            font-family: sofia_proregular;
-            src: url(fonts/mostardesign_-_sofia_pro_regular-webfont.woff2) format('woff2'), url(fonts/mostardesign_-_sofia_pro_regular-webfont.woff) format('woff');
-            font-weight: 400;
-            font-style: normal
-        }
-
-        @font-face {
-            font-family: sofia_probold;
-            src: url(fonts/mostardesign_-_sofia_pro_bold-webfont.woff2) format('woff2'), url(fonts/mostardesign_-_sofia_pro_bold-webfont.woff) format('woff');
-            font-weight: 400;
-            font-style: normal
-        }
-
-        @font-face {
-            font-family: matizregular;
-            src: url(fonts/matiz-webfont.woff2) format('woff2'), url(fonts/matiz-webfont.woff) format('woff');
-            font-weight: 400;
-            font-style: normal
-        }
-
-        .buyNowT {
-            display: block;
-            margin: 0 auto;
-            text-align: center;
-            width: 300px;
-            border-radius: 3px;
-            font-weight: 900;
-            color: black;
-            background-image: url(./img/buy.png);
-            background-size: cover;
-            height: 150px;
-            background-repeat: no-repeat;
-            padding: 2.1em 0 0 2em;
-            font-size: 27px;
-            font-family: matizregular;
-        }
-
-        .statT {
-            color: #ed6a55;
-            font-weight: 800;
-            ;
-        }
-
-        .midCloud1 {
-            top: 20%;
-            max-width: 30%;
-            -webkit-animation: cloud 17s infinite linear;
-            animation: cloud 17s infinite linear;
-            transform: rotate(25deg);
-            -webkit-transform: rotate(25deg);
-        }
-
-        .midCloud2 {
-            top: 25%;
-            max-width: 250px;
-            height: 150px;
-            -webkit-animation: cloud 18s 7s infinite linear;
-            animation: cloud 18s 7s infinite linear
-        }
-
-        @-webkit-keyframes cloud2 {
-            0% {
-                transform: translateX(-100%)
+            .fab,
+            .far {
+                font-weight: 400;
+                font-size: 18px;
             }
-
-            100% {
-                transform: translateX(100vw)
+    
+            .buyN {
+                color: #fabd2b !important;
+                background: #202020;
+                border-radius: 5px;
             }
-        }
-
-        @keyframes cloud2 {
-            0% {
-                transform: translateX(-100%)
+    
+            .miniM {
+                width: 70% !important;
+                margin: 0 auto;
+                display: block;
             }
-
-            100% {
-                transform: translateX(100vw)
+    
+            .htB {
+                width: 50% !important;
+                margin: 0 auto;
+                display: block;
             }
-        }
-
-        @-webkit-keyframes cloud {
-            0% {
-                transform: translateX(100%)
+    
+            @font-face {
+                font-family: sofia_proregular;
+                src: url(fonts/mostardesign_-_sofia_pro_regular-webfont.woff2) format('woff2'), url(fonts/mostardesign_-_sofia_pro_regular-webfont.woff) format('woff');
+                font-weight: 400;
+                font-style: normal
             }
-
-            100% {
-                transform: translateX(-100vw)
+    
+            @font-face {
+                font-family: sofia_probold;
+                src: url(fonts/mostardesign_-_sofia_pro_bold-webfont.woff2) format('woff2'), url(fonts/mostardesign_-_sofia_pro_bold-webfont.woff) format('woff');
+                font-weight: 400;
+                font-style: normal
             }
-        }
-
-        @keyframes cloud {
-            0% {
-                transform: translateX(100%)
+    
+            @font-face {
+                font-family: matizregular;
+                src: url(fonts/matiz-webfont.woff2) format('woff2'), url(fonts/matiz-webfont.woff) format('woff');
+                font-weight: 400;
+                font-style: normal
             }
-
-            100% {
-                transform: translateX(-100vw)
+    
+            .buyNowT {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                width: 300px;
+                border-radius: 3px;
+                font-weight: 900;
+                color: black;
+                background-image: url(./img/buy.png);
+                background-size: cover;
+                height: 150px;
+                background-repeat: no-repeat;
+                padding: 2.1em 0 0 2em;
+                font-size: 27px;
+                font-family: matizregular;
             }
-        }
-
-        .matiz {
-            font-family: matizregular;
-        }
-
-        .navbar-light .navbar-nav .nav-link {
-            color: rgba(0, 0, 0, .5);
-            font-family: matizregular, sans-serif;
-            color: black;
-        }
-
-        html {
-            background: url(./bg-3.jpg) !important;
-            /* -webkit-background-size: contain !important;
-    background-size: contain  !important; */
-            background-repeat: repeat-x;
-
-        }
-
-        body {
-            background-color: transparent !important;
-            overflow-x: hidden;
-        }
-
-        body.page-template-text article h2,
-        body.page-template-text article h3 {
-            margin-bottom: 1em;
-            margin-top: 2em;
-            text-transform: uppercase;
-        }
-
-        body.page-template-text article p {
-            margin-bottom: 1em;
-        }
-    </style>
+    
+            .statT {
+                color: #ed6a55;
+                font-weight: 800;
+                ;
+            }
+    
+            .midCloud1 {
+                top: 20%;
+                max-width: 30%;
+                -webkit-animation: cloud 17s infinite linear;
+                animation: cloud 17s infinite linear;
+                transform: rotate(25deg);
+                -webkit-transform: rotate(25deg);
+            }
+    
+            .midCloud2 {
+                top: 25%;
+                max-width: 250px;
+                height: 150px;
+                -webkit-animation: cloud 18s 7s infinite linear;
+                animation: cloud 18s 7s infinite linear
+            }
+    
+            @-webkit-keyframes cloud2 {
+                0% {
+                    transform: translateX(-100%)
+                }
+    
+                100% {
+                    transform: translateX(100vw)
+                }
+            }
+    
+            @keyframes cloud2 {
+                0% {
+                    transform: translateX(-100%)
+                }
+    
+                100% {
+                    transform: translateX(100vw)
+                }
+            }
+    
+            @-webkit-keyframes cloud {
+                0% {
+                    transform: translateX(100%)
+                }
+    
+                100% {
+                    transform: translateX(-100vw)
+                }
+            }
+    
+            @keyframes cloud {
+                0% {
+                    transform: translateX(100%)
+                }
+    
+                100% {
+                    transform: translateX(-100vw)
+                }
+            }
+    
+            .matiz {
+                font-family: matizregular;
+            }
+    
+            .navbar-light .navbar-nav .nav-link {
+                color: rgba(0, 0, 0, .5);
+                font-family: matizregular, sans-serif;
+                color: black;
+            }
+    
+            html {
+                background-color: white;
+    
+            }
+    
+            body {
+                background-color: transparent !important;
+                overflow-x: hidden;
+            }
+    
+            body.page-template-text article h2,
+            body.page-template-text article h3 {
+                margin-bottom: 1em;
+                margin-top: 2em;
+                text-transform: uppercase;
+            }
+    
+            body.page-template-text article p {
+                margin-bottom: 1em;
+            }
+        </style>
     <noscript>
         <style id="rocket-lazyload-nojs-css">
             .rll-youtube-player,
@@ -351,13 +335,13 @@
                             <a class="nav-link" href="#howtobuy">How to Buy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" title="Comin Soon" href="#">Lemuria</a>
+                            <a class="nav-link " title="Lemuria World" href="/lemuria">Lemuria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Story</a>
+                            <a class="nav-link" href="/story">Story</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" title="Comin Soon" href="#">Game</a>
+                            <a class="nav-link " title="Lem invaders" href="https://invaders.lemur.finance">Game</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#tokenomics">Tokenomics</a>
@@ -464,15 +448,13 @@
             <div class="row">
                 <div class="container">
                     <h2 style="font-family: 'cartoon_slamregular';    font-family:matizregular,sans-serif;
-                        color: #195b88;line-height: initial;
+                        color: #343a408;line-height: initial;
                        " class="text-46 xl:text-89  text-center fadein">
                         How to Buy via Trustwallet <br />
                     </h2>
                     <div class="py-40 leading-normal text-darkgrey text-center xl:text-left fadein"
                         style="padding-top: 0;">
-                        <p style="color: #195b88;
-                            font-weight: 600;    padding-top: 0;
-                            " class="text-25 xl:text-25">
+                        <p style="color: #343a408;font-weight: 600;    padding-top: 0;" class="text-25 xl:text-25">
                             Trust Wallet - a cryptocurrency wallet application for mobile phones and tablets (available
                             on apple iOS and google android)
 
@@ -805,30 +787,25 @@
     <article id="howtobuy" class=" xl:flex-row items-stretch limited-w mx-auto relative">
         <div class="container">
             <div class="col text-center">
-                <h2 style="color:#ed6a55" class="text-30 xl:text-44 gopher-medium pb-40 pt-20 text-center  matiz">
-                    How to Buy</h2>
+                <h5 style="text-transform: uppercase;margin-top: 5em;">
+                    <a class="buyNowT" class="btn" href="">How to Buy</a>
+                </h5>
 
             </div>
             <div class="row">
 
 
                 <div class="col text-center">
-                    <img src="./img/metamask.png" class="htB" alt="">
-                    <h4 style="color:#ed6a55" class="text-18 xl:text-22 pb-20 uppercase fadein pt-60 xl:pt-40  matiz">
-                        Via MetaMask
-                    </h4>
-                    <p>
-                        <a href="/how-to-metamask"> follow the instructions here</a>
-                    </p>
+                    <a href="/how-to-metamask">  <img src="./img/metamask.png" class="htB" alt="">
+                   
+                    </a>
+                    
                 </div>
                 <div class="col text-center">
-                    <img src="./img/trustwal.png" class="htB" alt="">
-                    <h4 style="color:#ed6a55" class="text-18 xl:text-22 pb-20 uppercase fadein pt-60 xl:pt-40  matiz">
-                        Via Trust Wallet
-                    </h4>
-                    <p>
-                        <a href="/how-to-trustwallet"> follow the instructions here</a>
-                    </p>
+                    <a href="/how-to-trustwallet">  <img src="./img/trustwal.png" class="htB" alt="">
+                   
+                 </a>
+                   
                 </div>
 
 
@@ -865,37 +842,17 @@
     </article>
 
 
-    <article class=" xl:flex-row items-stretch limited-w mx-auto relative text-center" style="background-color: #1b7687;    background-position: bottom;
-                    background-color: #1b7687;
-                    background-image: url(howto.png);
-                    background-size: 100%;
-                    background-repeat: no-repeat;
-                    background-attachment: fixed;">
-        <div class="h-20">
-            <svg class="small-wave flex w-screen h-auto overflow-visible" viewBox="0 0 1720.2 86.8">
-                <path fill="#f6d8d0" d="M3333.2,5.1c-27.3,2.5-53.1,4.9-105.9,4.9c-52.8,0-78.6-2.4-105.9-4.9c-27.1-2.5-55-5.1-110.3-5.1
-	c-55.3,0-83.2,2.6-110.2,5.1c-27.3,2.5-53.1,4.9-105.9,4.9s-78.6-2.4-105.9-4.9c-27.1-2.5-55-5.1-110.3-5.1
-	c-55.3,0-83.2,2.6-110.2,5.1c-27.3,2.5-53.1,4.9-105.9,4.9s-78.6-2.4-106-4.9c-27-2.5-55-5.1-110.2-5.1s-83.2,2.6-110.2,5.1
-	c-27.4,2.5-53.1,4.9-106,4.9s-78.6-2.4-106-4.9c-26-2.4-52.9-4.9-104.1-5.1v0c-53.1,0.1-80.6,2.7-107.1,5.1
-	c-27.3,2.5-53.1,4.9-105.9,4.9c-52.8,0-78.6-2.4-105.9-4.9c-27.1-2.5-55-5.1-110.3-5.1s-83.2,2.6-110.2,5.1
-	c-27.3,2.5-53.1,4.9-105.9,4.9S996.3,7.7,969,5.1C941.9,2.6,914,0,858.7,0c-55.3,0-83.2,2.6-110.2,5.1c-27.3,2.5-53.1,4.9-105.9,4.9
-	s-78.6-2.4-106-4.9c-27-2.5-55-5.1-110.2-5.1s-83.2,2.6-110.2,5.1c-27.4,2.5-53.1,4.9-106,4.9s-78.6-2.4-106-4.9
-	C78.2,2.7,51.3,0.2,0,0v152.1h1720.2h1720.2V0C3387.2,0.1,3359.8,2.6,3333.2,5.1z" />
-            </svg>
-        </div>
-
-    </article>
 
 
     </main>
 
-    <footer id="footer" class="overflow-hidden" style="    background: #f8d7d0;">
+    <footer id="footer" class="overflow-hidden" style="    background: #ffffff;">
 
         <div class="hidden xl:block">
             <svg version="1.1" class="footer-wave overflow-visible" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4369.9 911.4" xml:space="preserve">
                 <path fill="#fbe9c5" d="M6554.9,177.3c-1031.7,0-1031.7,397.2-2185,397.2c-1171.4,0-1153.3-397.2-2185-397.2S1153.3,574.6,0,574.6
-	v720.8h4369.9h4369.9V574.6C7568.4,574.6,7586.6,177.3,6554.9,177.3z" />
+v720.8h4369.9h4369.9V574.6C7568.4,574.6,7586.6,177.3,6554.9,177.3z" />
             </svg>
         </div>
         <!-- partial:index.partial.html -->
@@ -914,40 +871,41 @@
                 <div class="row">
                     <div class="col-12 col-md">
                         <img class="mb-2" src="./lem_logo.png" alt="" style="width: 95px;">
-                        <small class="d-block mb-3 text-muted">© 2021 Lemur Finance</small>
+                        <small class="d-block mb-3 ">© 2021 Lemur Finance</small>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Usefull Links</h5>
+                        <h5 style="font-weight: 800;">Usefull Links</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="#roadmapl">Roadmap</a></li>
-                            <li><a class="text-muted" href="javascript:void(0)">Lemuria</a></li>
-                            <li><a class="text-muted" href="#tokenomics">Tokenomics</a></li>
-                            <li><a class="text-muted" href="#howtobuy">How to Buy</a></li>
+                            <li><a class="" href="#roadmapl">Roadmap</a></li>
+                            <li><a class="" href="javascript:void(0)">Lemuria</a></li>
+                            <li><a class="" href="#tokenomics">Tokenomics</a></li>
+                            <li><a class="" href="#howtobuy">How to Buy</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Social</h5>
+                        <h5 style="font-weight: 800;">Social</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted" href="https://t.me/lemurfinance">Telegram</a></li>
-                            <li><a class="text-muted" href="https://twitter.com/FinanceLemur">Twitter</a></li>
-                            <li><a class="text-muted" href="https://lemurfinance.medium.com">Medium</a></li>
-                            <li><a class="text-muted" href="https://www.facebook.com/Lemur.Finance">Facebook</a></li>
-                            <li><a class="text-muted" href="https://www.reddit.com/r/LemurFinance/">Reddit</a></li>
+                            <li><a class="" href="https://t.me/lemurfinance">Telegram</a></li>
+                            <li><a class="" href="https://twitter.com/FinanceLemur">Twitter</a></li>
+                            <li><a class="" href="https://lemurfinance.medium.com">Medium</a></li>
+                            <li><a class="" href="https://www.facebook.com/Lemur.Finance">Facebook</a>
+                            </li>
+                            <li><a class="" href="https://www.reddit.com/r/LemurFinance/">Reddit</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-md">
-                        <h5>Other</h5>
+                        <h5 style="font-weight: 800;">Other</h5>
                         <ul class="list-unstyled text-small">
-                            <li><a class="text-muted"
+                            <li><a class=""
                                     href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb">Pancake
                                     Swap</a></li>
-                            <li><a class="text-muted"
+                            <li><a class=""
                                     href="https://goswapp-bsc.web.app/0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb">Chart</a>
                             </li>
-                            <li><a class="text-muted"
+                            <li><a class=""
                                     href="https://bscscan.com/tx/0xed781d03933e4d6a609232b04162032412da98b6bcfe08728feb6f363a88f76a">Burn
                                     Tokens</a></li>
-                            <li><a class="text-muted"
+                            <li><a class=""
                                     href="https://bscscan.com/token/0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb/">BSC
                                     Contract</a></li>
                         </ul>
@@ -961,9 +919,9 @@
 
             <div class="flex flex-col w-full pt-40 leading-normal xl:flex-row xl:items-end xl:leading-none xl:w-auto xl:pt-0 fadein"
                 style="    width: 100%;
-                              text-align: center;">
+                          text-align: center;">
                 <div class="order-2 copyrigth xl:ml-90" style="  color:white;  margin: 0 auto;
-                              display: block;">
+                          display: block;">
                     Copyright © 2021 <img src="./logo_w.png" style="width: 37px;" />
 
                 </div>
