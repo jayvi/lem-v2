@@ -89,7 +89,7 @@
             display: block;
         }
 #canvas{
-    /* height:500px !important; */
+    height:500px !important;
 }
         @font-face {
             font-family: sofia_proregular;
@@ -485,7 +485,22 @@
   line-height: 10px;
 }
 /*===== // Vertical Timeline =====*/
+.woodSign{
+    font-family: matizregular,sans-serif;
+    margin: 2.8em 0.5em 0 0;
+    line-height: initial;
+    font-size: 2.5em;
 
+}
+@media only screen and (max-width: 400px) {
+    .woodSign{
+    font-family: matizregular,sans-serif;
+    margin: 4.2em 0.5em 0 0;
+    line-height: initial;
+    font-size: 2.5em;
+
+    } 
+}
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (max-width: 830px) {
   #conference-timeline .timeline-start,
@@ -718,9 +733,7 @@
                         <div class="col-md-12 col-sm-12 text-center">
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <h2 style="font-family: 'cartoon_slamregular';    font-family:matizregular,sans-serif;    margin: 2.7em 0.5em 0 0;
-                            color: #343a408;line-height: initial;
-                           " class="text-50 xl:text-49   fadein">
+                                <h2 style="" class="text-50 xl:text-49  woodSign  fadein">
                                     Welcome <br/>to  <br />
                                     Lemuria
                                     <div class="py-40 leading-normal text-darkgrey  xl:text-left fadein"
@@ -754,7 +767,7 @@
                                 <p style="color: #343a40;
                             font-weight: 600;    padding-top: 0;    text-transform: lowercase;
                             " class="text-27 xl:text-27 text-center">
-                                    5% tax transaction: 3%  locked forever in <span style="text-transform: uppercase;">LEM/BNB</span> liquidity and
+                                   5% transaction tax: 3%  locked forever in <span style="text-transform: uppercase;">LEM/BNB</span> liquidity and
                                    
                                     2% distributed to holders proportionate to their holdings.
                                 </p>
