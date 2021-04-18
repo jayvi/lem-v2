@@ -110,8 +110,8 @@
             font-style: normal
         }
 .rMapC{
-    background-image: url(./img/circl.png);
-                        background-size: 82%;
+    background-image: url(./img/circlxb.png);
+                        background-size: contain;
                         background-repeat: no-repeat;
                         background-position: top;
                         min-height: 450px;
@@ -351,6 +351,189 @@
     </noscript>
 
     <link rel="stylesheet" href="./style.css">
+    <style>
+
+/*===== Vertical Timeline =====*/
+#conference-timeline {
+  position: relative;
+  max-width: 920px;
+  width: 100%;
+  margin: 0 auto;
+}
+#conference-timeline .timeline-start,
+#conference-timeline .timeline-end {
+  display: table;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: #343a40;
+  padding: 15px 23px;
+  color: #fff;
+  max-width: 5%;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+#conference-timeline .conference-center-line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  background: #343a40;
+  z-index: -1;
+}
+#conference-timeline .conference-timeline-content {
+  padding-top: 67px;
+  padding-bottom: 67px;
+}
+.timeline-article {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 20px 0;
+}
+.timeline-article .content-left-container,
+.timeline-article .content-right-container {
+  max-width: 44%;
+  width: 100%;
+}
+.timeline-article .timeline-author {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #242424;
+  text-align: right;
+}
+.timeline-article .content-left,
+.timeline-article .content-right {
+  position: relative;
+  width: auto;
+  border: 1px solid #ddd;
+  background-color: #ffffffc2;
+  box-shadow: 0 1px 3px rgba(0,0,0,.03);
+  padding: 27px 25px;
+}
+.timeline-article p {
+  margin: 0 0 0 0px;
+  padding: 0;
+  font-weight: 400;
+  color: #242424;
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+}
+.timeline-article p span.article-number {
+  position: absolute;
+  font-weight: 300;
+  font-size: 44px;
+  top: 10px;
+  left: -60px;
+  color: #343a40;
+}
+.timeline-article .content-left-container {
+  float: left;
+}
+.timeline-article .content-right-container {
+  float: right;
+}
+.timeline-article .content-left:before,
+.timeline-article .content-right:before{
+  position: absolute;
+  top: 20px;
+  font-size: 23px;
+  font-family: "FontAwesome";
+  color: #fff;
+}
+.timeline-article .content-left:before {
+  content: "\f0da";
+  right: -8px;
+}
+.timeline-article .content-right:before {
+  content: "\f0d9";
+  left: -8px;
+}
+.timeline-article .meta-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  margin-left: -31px;
+  color: #fff;
+  border-radius: 100%;
+  background: transparent;
+}
+.timeline-article .meta-date .date,
+.timeline-article .meta-date .month {
+  display: block;
+  text-align: center;
+  font-weight: 900;
+}
+.timeline-article .meta-date .date {
+  font-size: 30px;
+  line-height: 40px;
+}
+.timeline-article .meta-date .month {
+  font-size: 18px;
+  line-height: 10px;
+}
+/*===== // Vertical Timeline =====*/
+
+/*===== Resonsive Vertical Timeline =====*/
+@media only screen and (max-width: 830px) {
+  #conference-timeline .timeline-start,
+  #conference-timeline .timeline-end {
+    margin: 0;
+  }
+  #conference-timeline .conference-center-line {
+    margin-left: 0;
+    left: 50px;
+  }
+  .timeline-article .meta-date {
+    margin-left: 0;
+    left: 20px;
+  }
+  .timeline-article .content-left-container,
+  .timeline-article .content-right-container {
+    max-width: 100%;
+    width: auto;
+    float: none;
+    margin-left: 110px;
+    min-height: 53px;
+  }
+  .timeline-article .content-left-container {
+    margin-bottom: 20px;
+  }
+  .timeline-article .content-left,
+  .timeline-article .content-right {
+    padding: 10px 25px;
+    min-height: 65px;
+  }
+  .timeline-article .content-left:before {
+    content: "\f0d9";
+    right: auto;
+    left: -8px;
+  }
+  .timeline-article .content-right:before {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .timeline-article p {
+    margin: 0;
+  }
+  .timeline-article p span.article-number {
+    display: none;
+  }
+  
+}
+/*===== // Resonsive Vertical Timeline =====*/
+    </style>
 </head>
 
 <body class="home page-template-default page page-id-8 antialiased text-dark text-16 xl:text-20" cursor-color="#58FFB8"
@@ -791,15 +974,7 @@
            " class="text-46 xl:text-89   fadein">
                     How to Buy LEM Coin  <br />
                 </h2>
-                <div class="py-40 leading-normal text-darkgrey  xl:text-left fadein"
-                    style="padding-top: 0;">
-                    <p style="color: #33d7e1;
-                font-weight: 600;    padding-top: 0;
-                " class="text-27 xl:text-27">
-                        <a target="_blank"  href="https://exchange.pancakeswap.finance/#/swap?outputCurrency=0xc35f46aAEb8aD17bCbAa78c03540FEffa44790Cb">Pancake Swap</a>
-                        
-                    </p>
-                </div>
+              
             </div>
                 <div class="row">
 
@@ -846,22 +1021,172 @@
         <article id="roadmapl" class=" xl:flex-row items-stretch limited-w mx-auto relative" style="background-image: url(./img/rmap.png);
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: center;background-color: #ba9a73">
+        background-attachment: fixed;
+        background-position: center;">
             <h2 style="" class="text-30 xl:text-44 gopher-medium pb-40 pt-200 text-center matiz">Road Map
             </h2>
-            <section class="container-fluid ">
+            <!-- Vertical Timeline -->
+  <section id="conference-timeline">
+    <div class="timeline-start"></div>
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <h2 class="text-25 xl:text-44 gopher-medium  matiz">Website V2</h2>
+           
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>
+                Experiments</p>
+                <p>
+                Game #1</p>
+                <p>Story</p>
+                <p>
+                Lemuria</p>
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="meta-date">
+            <img class="rMapImg" src="./img/1.png"/>
+        </div>
+      </div>
+      <!-- // Article -->
+      
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <h2 class="text-25 xl:text-44 gopher-medium  matiz">Marketing push</h2>
+           
+           
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>Grassroots marketing
+            </p>
+            <p>
+                Community airdrops</p>
+            <p>
+                Community tournament
+
+            </p>
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="meta-date">
+            <img class="rMapImg" src="./img/2.png"/>
+        </div>
+      </div>
+      <!-- // Article -->
+      
+      <!-- Article -->
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <h2 class="text-25 xl:text-44 gopher-medium  matiz"> Partnerships</h2>
+           
+
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>Foundation and Rescue Center
+            </p>
+            <p>
+                Lemur Portal
+            </p>
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="meta-date">
+            <img class="rMapImg" src="./img/3.png"/>
+        </div>
+      </div>
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <h2 class="text-25 xl:text-44 gopher-medium  matiz"> NFT's</h2>
+           
+        
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>Lemuria NFT Marketplace
+            </p>
+            <p>
+                NFT Farming</p>
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="meta-date">
+            <img class="rMapImg" src="./img/4.png"/>
+        </div>
+      </div>
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <h2 class="text-25 xl:text-44 gopher-medium  matiz"> Games</h2> 
+           
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>work in progress :)</p>
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="meta-date">
+            <img class="rMapImg" src="./img/5.png"/>
+        </div>
+      </div>
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <h2 class="text-25 xl:text-44 gopher-medium  matiz"> Real world charities</h2> 
+        
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+                  
+            <p> Hotel industry NFT's </p>
+            <p> Adopt your Lemur NFT</p> 
+          </div>
+          <span class="timeline-author"></span>
+        </div>
+        <div class="meta-date">
+            <img class="rMapImg" src="./img/6.png"/>
+        </div>
+      </div>
+      <!-- // Article -->
+    </div>
+    <div class="timeline-end"></div>
+  </section>
+            <!-- <section class="container-fluid full-graphic ">
                 <div class="container">
                     <div class="row">
                         <div class="col rMapC col-xs-12 " style=" ">
                             <h3 class="text-28 xl:text-44 text-center matiz rMapheadLine" style="color: white;">1</h3>
                             <h3 class="text-25 xl:text-44 text-center matiz rMapheadLine" style="color: white;">Website V2</h3>
                            <div class="row">
-                            <div class="col ">
+                            <div class="col-md-5 align-self-center">
                                     <img class="rMapImg" src="./img/1.png"/>
                                 </div>
                                 <div class="w-100 d-block d-sm-none d-none d-sm-block  d-md-none"></div>
 
-                                <div class="col rMapTxt" style="color: #95e6e8;padding: 2em 0;">
+                                <div class="col-md-7 rMapTxt align-self-center" style="color: #95e6e8;padding: 2em 0;">
                                 
                                     <p>Story</p>
                                     <p>
@@ -877,12 +1202,12 @@
                             <h3 class="text-28 xl:text-44 text-center matiz rMapheadLine" style="color: white;">2</h3>
                             <h3 class="text-25 xl:text-44 text-center matiz rMapheadLine" style="color: white;">Marketing push</h3>
                            <div class="row">
-                            <div class="col ">
+                            <div class="col-md-5 align-self-center ">
                                     <img class="rMapImg" src="./img/2.png"/>
                                 </div>
                                 <div class="w-100 d-block d-sm-none d-none d-sm-block  d-md-none"></div>
 
-                                <div class="col rMapTxt" style="color: #95e6e8;padding: 2em 0;">
+                                <div class="col-md-7 rMapTxt align-self-center" style="color: #95e6e8;padding: 2em 0;">
                                 
                                     <p>Grassroots marketing
                                     </p>
@@ -899,12 +1224,12 @@
                             <h3 class="text-28 xl:text-44 text-center matiz rMapheadLine" style="color: white;">3</h3>
                             <h3 class="text-25 xl:text-44 text-center matiz rMapheadLine" style="color: white;">Partnerships</h3>
                            <div class="row">
-                            <div class="col ">
+                            <div class="col-md-5 align-self-center ">
                                     <img class="rMapImg" src="./img/3.png"/>
                                 </div>
                                 <div class="w-100 d-block d-sm-none d-none d-sm-block  d-md-none"></div>
 
-                                <div class="col rMapTxt" style="color: #95e6e8;padding: 2em 0;">
+                                <div class="col-md-7 rMapTxt align-self-center" style="color: #95e6e8;padding: 2em 0;">
                                 
                                     <p>Foundation and Rescue Center
                                     </p>
@@ -921,12 +1246,12 @@
                             <h3 class="text-28 xl:text-44 text-center matiz rMapheadLine" style="color: white;">4</h3>
                             <h3 class="text-25 xl:text-44 text-center matiz rMapheadLine" style="color: white;">NFTs</h3>
                            <div class="row">
-                            <div class="col ">
+                            <div class="col-md-5 align-self-center ">
                                     <img class="rMapImg" src="./img/4.png"/>
                                 </div>
                                 <div class="w-100 d-block d-sm-none d-none d-sm-block  d-md-none"></div>
 
-                                <div class="col rMapTxt" style="color: #95e6e8;padding: 2em 0;">
+                                <div class="col-md-7 rMapTxt align-self-center" style="color: #95e6e8;padding: 2em 0;">
                                 
                                     <p>Lemuria NFT Marketplace
                                         </p>
@@ -940,12 +1265,12 @@
                             <h3 class="text-28 xl:text-44 text-center matiz rMapheadLine" style="color: white;">5</h3>
                             <h3 class="text-25 xl:text-44 text-center matiz rMapheadLine" style="color: white;">Games</h3>
                            <div class="row">
-                            <div class="col ">
+                            <div class="col-md-5 align-self-center ">
                                     <img class="rMapImg" src="./img/5.png"/>
                                 </div>
                                 <div class="w-100 d-block d-sm-none d-none d-sm-block  d-md-none"></div>
 
-                                <div class="col rMapTxt" style="color: #95e6e8;padding: 2em 0;">
+                                <div class="col-md-7 rMapTxt align-self-center" style="color: #95e6e8;padding: 2em 0;">
                                 
                                     <p>work in progress :)</p>
                                     
@@ -958,12 +1283,12 @@
                             <h3 class="text-25 xl:text-44 text-center matiz rMapheadLine" style="color: white;">Real world charities
                             </h3>
                            <div class="row">
-                            <div class="col ">
+                            <div class="col-md-5 align-self-center ">
                                     <img class="rMapImg" src="./img/6.png"/>
                                 </div>
                                 <div class="w-100 d-block d-sm-none d-none d-sm-block  d-md-none"></div>
 
-                                <div class="col rMapTxt" style="color: #95e6e8;padding: 2em 0;">
+                                <div class="col-md-7 rMapTxt align-self-center" style="color: #95e6e8;padding: 2em 0;">
                                 
                                     <p>Hotel industry</p>
                                     <p>
@@ -976,7 +1301,7 @@
                         
                     </div>
                     </div>
-            </section>
+            </section> -->
         </article>
         <!-- <article id="roadmapl" class=" xl:flex-row items-stretch limited-w mx-auto relative" style="background-color: #ba9a73;">
             <h2 style="" class="text-30 xl:text-44 gopher-medium pb-40 pt-200 text-center matiz">Road Map
@@ -1122,26 +1447,9 @@
             </section>
 
         </article> -->
-        <article class=" xl:flex-row items-stretch limited-w mx-auto relative text-center" >
-            
-
-        </article>
+   
         <article class=" xl:flex-row items-stretch limited-w mx-auto relative" style="background-color: transparent">
-            <div class="container">
-                <div class="col-md-12">
-                    <h2 style="font-family: 'cartoon_slamregular';    font-family:matizregular,sans-serif;
-                    color: #343a408;line-height: initial;text-transform:uppercase;
-                   " class="text-46 xl:text-89   fadein">
-                            Stay Tuned For the latest news <br />
-                            <div class="py-40 leading-normal text-darkgrey  xl:text-left fadein"
-                        style="padding-top: 0;">
-                        
-                    </div>
-                </div>
-                
-             
-            </div>
-            
+          
             <div id="news" cursor-color="#1C1C1C">
             
                 <div class="container">
